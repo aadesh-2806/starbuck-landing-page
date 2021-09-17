@@ -1,0 +1,130 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins' , sans-serif;
+}
+body{
+    background-color: #eee;
+    max-height: 100vh;
+    overflow: hidden;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 70px;
+}
+.navbar img{
+    width: 70px;
+    height: 70px;
+}
+ul{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+li{
+    padding: 10px 10px;
+    margin-left: 10px;
+    list-style: none;
+    letter-spacing: 1px;
+    font-size: 15px;
+}
+.body{
+    position: relative;
+    margin-top: 40px;
+    margin-left: 80px;
+    display: flex;
+    justify-content: space-between;
+}
+.body h1{
+    font-weight: 500;
+    font-size: 60px;
+}
+.body h1 span{
+    color: #184618;
+    font-weight: 900;
+}
+p{
+    width: 550px;
+    font-size: 15px;
+    color: #d11c1c;
+    font-weight: 600;
+    line-height: 20px;
+}
+.btn{
+    width: fit-content;
+    margin-top: 30px;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #184618 ;
+    color: #eee;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 14px;
+}
+.image{
+    position: relative;
+    width: 720px;
+}
+.circle{
+    z-index: -1;
+    position: absolute;
+    width: 1400px;
+    height: 1400px;
+    border-radius: 50%;
+    background-color: brown;
+}
+.image img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-10%);
+    transition: 1s;
+}
+.image img:hover{
+    transform: translate(-50%,-13%);
+}
+.icons{
+    position: absolute;
+    right: 0;
+    top: 50%;
+    height: fit-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.icons span{
+    font-size: 25px;
+    margin: 10px;
+    color: #fff;
+}
+.scrollable{
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    width: fit-content;
+    height: fit-content;
+    transform: translateX(-50%) translateY(-20px);
+}
+.scrollable img{
+    width: 60px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.scrollable img:hover{
+    transform: translateY(-10px);
+}
+.element{
+    position: absolute;
+    width: 300px;
+    height: 300px;
+    border-radius: 50%;
+    background: black;
+}
+.top{
+    z-index: 10;
+}
